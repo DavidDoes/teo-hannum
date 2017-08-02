@@ -1,0 +1,402 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        border: 0 !important;
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+        opacity: .7;
+        background-color: #E9F7EF;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children
+of those sections to manage the look and feel of the site. */
+
+.container>.navbar-header {
+    background-color: #E9F7EF;
+}
+
+.collapse {
+    background-color: #E9F7EF;
+}
+
+.navbar-toggle {
+    background-color: #E9F7EF;
+}
+
+a.navbar-brand.page-scroll {
+    color: #2E86C1;
+}
+
+nav.navbar.navbar-default.navbar-fixed-top li a {
+    color: #2E86C1;
+}
+
+.navbar-nav li {
+    font-size: 1.5em;
+    padding-left: 1.5em;
+}
+
+.navbar-brand {
+    position: absolute;
+}
+
+#intro {
+    background: url('../images/water.jpeg');
+    background-size: cover;
+}
+
+.intro-section {
+    text-align: center;
+    background: #fff;
+}
+
+.tagline {
+    padding-top: 9.2em;
+    color: black;
+    opacity: .6;
+}
+
+section {
+    min-height: 100%;
+    overflow: auto;
+}
+
+.who-section {
+    background: #C5D8E5; 
+    height: 100%;
+    padding-top: 9em;
+    text-align: right;
+    overflow: scroll;
+}
+
+.quote {
+    text-align: left;
+}
+
+div#whoBox {
+    position: relative;
+}
+
+div#whoBox2 {
+    text-align: left;
+}
+
+div.row #whoBox {
+    float: left;
+    background: #FFFFFF;
+    padding: .5em;
+    min-height: 20em;
+}
+
+div.row #whoPic {
+    float: left;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.what-section {
+    background: #EFE7DB;   
+    padding-top: 9em;
+    text-align: left;
+}
+
+div#whatBox {
+    position: relative;
+    float: right;
+}
+
+div#whatBox2 {
+    text-align: right;
+}
+
+#videoBox {
+    text-align: center;
+    padding: 1em;
+}
+
+div.row #whatBox {
+    background: #FFFFFF;
+    min-height: 20em;
+    padding: .5em;
+}
+
+div.row #whatPic {
+    float: right;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.where-section {
+    min-height: 1500px;
+    padding-top: .9em;
+    background: #C1C4BF;
+    overflow: contain;
+}
+
+div#whereBox {
+    position: relative;
+    text-align: center;
+}
+
+div#whereBox2 {
+    padding-bottom: .5em;
+    text-align: right;
+}
+
+div#whereBox3 {
+    padding: .5em;  
+    min-height: 500px;
+
+    text-align: center;
+    background: white;
+}
+
+div.row #whereBox {
+    background: #FFFFFF;
+    padding: .5em;
+    min-height: 20em;
+    
+}
+
+div.row #wherePic {
+    float: left;
+}
+
+/* Price Table */
+
+.table {
+    margin: auto;
+    max-width: 20em;
+    min-width: 10em;
+    text-align: center;
+}
+
+thead, th {
+    display: none;
+}
+
+
+/* Global */
+
+h2 {
+    font-family: 'Bellefair', serif;
+    padding-top: 1.5em;
+    padding-left: .5em;
+    text-align: left;
+}
+
+ blockquote {
+    font-family: 'Dancing Script', cursive;
+    font-size: 18px;
+    margin: 0.25em 0;
+    padding: 0.25em 40px;
+    border-left: none;
+    line-height: 1.45;
+    position: relative;
+    color: #383838;
+} 
+
+blockquote:before {
+    display: block;
+    content: "\201C";
+    font-size: 2em;
+    position: absolute;
+    left: -.25em;
+    top: -.4em;
+    color: #7a7a7a;
+}
+
+cite {
+    font-family: 'Bellefair', serif;
+    font-size: 1.4em;
+    text-align: left;
+}
+
+#map {
+    width: 50%;
+    float: left;
+}
+
+/* Contact Form */
+
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: #bbb5af;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: #bbb5af;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+  color: #bbb5af;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+  color: #bbb5af;
+}
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+  color: #cbc6c1;
+}
+
+#form {
+    float: right;
+  position: relative;
+  min-width: 300px;
+  max-width: 300px;
+  height: 300px;
+  margin-right: 15px;
+}
+
+input {
+  font-size: 0.875em;
+  min-width: 300px;
+  max-width: 300px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  
+  opacity: .6;
+  outline: none;
+  color: #726659;
+  
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+textarea {
+  min-width: 300px;
+  max-width: 300px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  
+  opacity: .6;
+  outline: none;
+  
+  color: #726659;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  
+  border: solid 1px #b3aca7;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+#submit {
+  width: 500px;
+  
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  color: #FFFFFF;
+  
+  outline:none;
+  cursor: pointer;
+  
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+
+#submit:hover {
+  color: grey;
+}
