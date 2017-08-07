@@ -86,7 +86,7 @@ section {
 }
 
 .who-section {
-    background: #C5D8E5; 
+    background: #C5D8E5;
     height: 100%;
     padding-top: 9em;
     text-align: right;
@@ -119,7 +119,7 @@ div.row #whoPic {
 }
 
 .what-section {
-    background: #EFE7DB;   
+    background: #EFE7DB;
     padding-top: 9em;
     text-align: left;
 }
@@ -168,10 +168,8 @@ div#whereBox2 {
 }
 
 div#whereBox3 {
-    padding: .5em;  
-    min-height: 500px;
-
-    text-align: center;
+    padding: .5em;
+    min-height: 1200px;
     background: white;
 }
 
@@ -179,7 +177,7 @@ div.row #whereBox {
     background: #FFFFFF;
     padding: .5em;
     min-height: 20em;
-    
+
 }
 
 div.row #wherePic {
@@ -199,6 +197,67 @@ thead, th {
     display: none;
 }
 
+/*Contact Form*/
+.form-custom {
+    float: right;
+	background: transparent;
+	width: 400px;
+    padding-left: 1em;
+    padding-bottom: 1em;
+}
+
+.form-custom .mobile {
+    float: none;
+}
+
+h1 {
+	text-align: center;
+	color: #ffffff;
+	font-weight: 300;
+	margin: 0 0 40px;
+}
+.form-group {
+	margin-bottom: 20px !important;
+}
+form select, .form_custom select {
+    padding: 0px !important;
+    font-size: 13px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 45px;
+    font-size: 16px !important;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: transparent !important;
+    border: none !important;
+    background-image: none;
+    border-bottom: 1px solid #423A6B !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.button {
+	border: 0;
+	outline: none;
+	border-radius: 0;
+	font-size: 1em;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	background: #62C5BF;
+	color: #ffffff;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	-webkit-appearance: none;
+}
+.button-block {
+	display: block;
+	padding: 7px 15px;
+	margin: 10px auto;
+}
+/*End Contact Form*/
 
 /* Global */
 
@@ -207,6 +266,11 @@ h2 {
     padding-top: 1.5em;
     padding-left: .5em;
     text-align: left;
+}
+
+
+div {
+    padding: 10px;
 }
 
  blockquote {
@@ -218,7 +282,7 @@ h2 {
     line-height: 1.45;
     position: relative;
     color: #383838;
-} 
+}
 
 blockquote:before {
     display: block;
@@ -237,166 +301,7 @@ cite {
 }
 
 #map {
-    width: 50%;
     float: left;
-}
-
-/* Contact Form */
-
-@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
-
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  color: #aca49c;
-  font-size: 0.875em;
-}
-
-input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
-  color: #bbb5af;
-}
-
-input::-moz-placeholder, textarea::-moz-placeholder {
-  color: #aca49c;
-  font-size: 0.875em;
-}
-
-input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
-  color: #bbb5af;
-}
-
-input::placeholder, textarea::placeholder {
-  color: #aca49c;
-  font-size: 0.875em;
-}
-
-input:focus::placeholder, textarea::focus:placeholder {
-  color: #bbb5af;
-}
-
-input::-ms-placeholder, textarea::-ms-placeholder {
-  color: #aca49c;
-  font-size: 0.875em;
-}
-
-input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
-  color: #bbb5af;
-}
-
-/* on hover placeholder */
-
-input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
-  color: #e2dedb;
-  font-size: 0.875em;
-}
-
-input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
-  color: #cbc6c1;
-}
-
-input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
-  color: #e2dedb;
-  font-size: 0.875em;
-}
-
-input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
-  color: #cbc6c1;
-}
-
-input:hover::placeholder, textarea:hover::placeholder {
-  color: #e2dedb;
-  font-size: 0.875em;
-}
-
-input:hover:focus::placeholder, textarea:hover:focus::placeholder {
-  color: #cbc6c1;
-}
-
-input:hover::placeholder, textarea:hover::placeholder {
-  color: #e2dedb;
-  font-size: 0.875em;
-}
-
-input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
-  color: #cbc6c1;
-}
-
-#form {
-    float: right;
-  position: relative;
-  min-width: 300px;
-  max-width: 300px;
-  height: 300px;
-  margin-right: 15px;
-}
-
-input {
-  font-size: 0.875em;
-  min-width: 300px;
-  max-width: 300px;
-  height: 50px;
-  padding: 0px 15px 0px 15px;
-  
-  opacity: .6;
-  outline: none;
-  color: #726659;
-  
-  border: solid 1px #b3aca7;
-  border-bottom: none;
-  
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-}
-
-input:hover {
-  background: #b3aca7;
-  color: #e2dedb;
-}
-
-textarea {
-  min-width: 300px;
-  max-width: 300px;
-  height: 110px;
-  max-height: 110px;
-  padding: 15px;
-  
-  opacity: .6;
-  outline: none;
-  
-  color: #726659;
-  font-family: 'Lato', sans-serif;
-  font-size: 0.875em;
-  
-  border: solid 1px #b3aca7;
-  
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-}
-
-textarea:hover {
-  background: #b3aca7;
-  color: #e2dedb;
-}
-
-#submit {
-  width: 500px;
-  
-  padding: 0;
-  margin: -5px 0px 0px 0px;
-  
-  font-family: 'Lato', sans-serif;
-  font-size: 0.875em;
-  color: #FFFFFF;
-  
-  outline:none;
-  cursor: pointer;
-  
-  border: solid 1px #b3aca7;
-  border-top: none;
-}
-
-#submit:hover {
-  color: grey;
+    padding-left: 10px;
+    padding-top: 10px;
 }
