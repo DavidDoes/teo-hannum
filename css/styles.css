@@ -36,15 +36,7 @@ The padding is very important to make sure the scrollspy picks up the right area
 of those sections to manage the look and feel of the site. */
 
 .container>.navbar-header {
-    background-color: #E9F7EF;
-}
-
-.collapse {
-    background-color: #E9F7EF;
-}
-
-.navbar-toggle {
-    background-color: #E9F7EF;
+    background-color: ;
 }
 
 a.navbar-brand.page-scroll {
@@ -203,11 +195,6 @@ h2 {
     padding-top: 1.5em;
     padding-left: .5em;
     text-align: left;
-}
-
-
-div {
-    padding: 10px;
 }
 
  blockquote {
