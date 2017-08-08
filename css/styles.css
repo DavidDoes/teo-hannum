@@ -22,7 +22,7 @@ html {
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
-        opacity: .7;
+        opacity: .6;
         background-color: #E9F7EF;
     }
 
@@ -55,6 +55,10 @@ nav.navbar.navbar-default.navbar-fixed-top li a {
     color: #2E86C1;
 }
 
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background-color: #E9F7EF;
+}
+
 .navbar-nav li {
     font-size: 1.5em;
     padding-left: 1.5em;
@@ -75,7 +79,7 @@ nav.navbar.navbar-default.navbar-fixed-top li a {
 }
 
 .tagline {
-    padding-top: 9.2em;
+    padding-top: 9em;
     color: black;
     opacity: .6;
 }
@@ -150,38 +154,33 @@ div.row #whatPic {
     max-height: 100%;
 }
 
-.where-section {
+.details-section {
     min-height: 1500px;
     padding-top: .9em;
     background: #C1C4BF;
     overflow: contain;
 }
 
-div#whereBox {
+div#detailsBox {
     position: relative;
     text-align: center;
 }
 
-div#whereBox2 {
+div#detailsBox2 {
     padding-bottom: .5em;
     text-align: right;
 }
 
-div#whereBox3 {
+div#detailsBox3 {
     padding: .5em;
-    min-height: 1200px;
     background: white;
 }
 
-div.row #whereBox {
+div.row #detailsBox {
     background: #FFFFFF;
     padding: .5em;
     min-height: 20em;
 
-}
-
-div.row #wherePic {
-    float: left;
 }
 
 /* Price Table */
@@ -196,68 +195,6 @@ div.row #wherePic {
 thead, th {
     display: none;
 }
-
-/*Contact Form*/
-.form-custom {
-    float: right;
-	background: transparent;
-	width: 400px;
-    padding-left: 1em;
-    padding-bottom: 1em;
-}
-
-.form-custom .mobile {
-    float: none;
-}
-
-h1 {
-	text-align: center;
-	color: #ffffff;
-	font-weight: 300;
-	margin: 0 0 40px;
-}
-.form-group {
-	margin-bottom: 20px !important;
-}
-form select, .form_custom select {
-    padding: 0px !important;
-    font-size: 13px;
-}
-.form-control {
-    display: block;
-    width: 100%;
-    height: 45px;
-    font-size: 16px !important;
-    line-height: 1.42857143;
-    color: #555;
-    background-color: transparent !important;
-    border: none !important;
-    background-image: none;
-    border-bottom: 1px solid #423A6B !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-}
-
-.button {
-	border: 0;
-	outline: none;
-	border-radius: 0;
-	font-size: 1em;
-	font-weight: 600;
-	text-transform: uppercase;
-	letter-spacing: .1em;
-	background: #62C5BF;
-	color: #ffffff;
-	-webkit-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-	-webkit-appearance: none;
-}
-.button-block {
-	display: block;
-	padding: 7px 15px;
-	margin: 10px auto;
-}
-/*End Contact Form*/
 
 /* Global */
 
@@ -300,8 +237,85 @@ cite {
     text-align: left;
 }
 
-#map {
+.map {
+    width:55%;
+    margin-right:2%;
     float: left;
-    padding-left: 10px;
-    padding-top: 10px;
+}
+
+.map iframe {
+    width: 100%;
+}
+
+/*Contact Form*/
+.form-custom {
+    width:42%;
+    float: right;
+}
+
+@media (max-width: 800px) {
+    .form-custom {
+        float: none;
+        width: 100%;
+    }
+    .map {
+        float: none;
+        width: 100%;
+        display: inline-block;
+    }
+}
+
+h1 {
+	text-align: center;
+	color: #ffffff;
+	font-weight: 300;
+	margin: 0 0 40px;
+}
+
+.form-group {
+	margin-bottom: 20px !important;
+}
+
+form select, .form_custom select {
+    padding: 0px !important;
+    font-size: 13px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 45px;
+    font-size: 16px !important;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: transparent !important;
+    border: none !important;
+    background-image: none;
+    border-bottom: 1px solid #423A6B !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.button {
+	border: 0;
+	outline: none;
+	border-radius: 0;
+	font-size: 1em;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	background: #62C5BF;
+	color: #ffffff;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	-webkit-appearance: none;
+}
+.button-block {
+	display: block;
+	padding: 7px 15px;
+	margin: 10px auto;
+}
+/*End Contact Form*/
+
+.clearfix {
+    clear: both;
 }
